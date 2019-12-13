@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body onload="init()">
+    <div class="box otop grid_c1">
+        <div class="box-hd">
+            <a class="box_hd_lk" href="#">
+                <h3 class="box_tit">排行榜</h3>
+                <i class="box_hd_arrow"></i>
+            </a>
+        </div>
+        <div class="box-bd">
+            <div class="otop_inner">
+                <div class="tab otop_tab">
+                    <div class="tab_head">
+                        <div id="fruits" class="tab_head_item" onmouseover="fun1(this)">
+                            <a href="#" class="otop_tab_lk">
+                                水果
+                            </a>
+                        </div>
+                        <div id="fruits2" class="tab_head_item" onmouseover="fun1(this)">
+                            <a href="#" class="otop_tab_lk">
+                                时尚女鞋
+                            </a>
+                        </div>
+                        <div id="fruits3" class="tab_head_item" onmouseover="fun1(this)">
+                            <a href="#" class="otop_tab_lk">
+                                女装
+                            </a>
+                        </div>
+                        <div id="fruits4" class="tab_head_item" onmouseover="fun1(this)">
+                            <a href="#" class="otop_tab_lk">
+                                个护健康
+                            </a>
+                        </div>
+                        <div id="fruits5" class="tab_head_item" onmouseover="fun1(this)">
+                            <a href="#" class="otop_tab_lk">
+                                休闲食品
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab_body">
+                        <div class="tab_body_item">
+                            <div class="otop_list">
+                                <div class="otop_item otop_item_1">
+                                    <a href="#" class="otop_item_lk">
+                                        <div class="lazyimg lazyimg_loaded otop_item_img">
+                                            <img src="img/apple.jpg"class="lazyimg_img">
+                                        </div>
+                                        <div class="otop_item_rank otop_item_rank_1">
+                                            <span class="otop_item_rank_hot">热卖</span>
+                                            <span class="otop_item_rank_top">TOP</span>
+                                            <span class="otop_item_rank_num no1">01</span>
+                                            <svg>
+                                                <use xlink:href="#icon_square_red">
+                                                   <svg id="icon_square_red" viewBox="0 0 50 50">
+                                                       <polygon fill="#DB4C4C" points="0,50 50,50 50,0" ></polygon>
+                                                       <polygon fill="#E58B8B" points="50,0 0,0 0,50"></polygon>
+                                                   </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <span class="otop_item_name">聚牛果园 山东红富士苹果 新鲜水果 果径70#-80# 净重3斤</span>
+                                    </a>
+                                </div>
+                                <div class="otop_item otop_item_2">
+                                    <a href="#" class="otop_item_lk">
+                                        <div class="lazyimg lazyimg_loaded otop_item_img">
+                                            <img src="img/passion-fruit.jpg"class="lazyimg_img">
+                                        </div>
+                                        <div class="otop_item_rank otop_item_rank_2">
+                                            <span class="otop_item_rank_top">TOP</span>
+                                            <span class="otop_item_rank_num">02</span>
+                                            <svg>
+                                                <use xlink:href="#icon_square_orange">
+                                                    <svg id="icon_square_orange" viewBox="0 0 30 40">
+                                                        <polygon fill="#E08249" points="0,40 30,40 30,0"></polygon>
+                                                        <polygon fill="#F0AB82" points="30,0 0,0 0,40"></polygon>
+                                                    </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <span class="otop_item_name">陈叔 广西百香果 精选12个大果 新鲜水果 单果50-100g</span>
+                                    </a>
+                                </div>
+                                <div class="otop_item otop_item_3">
+                                    <a href="#" class="otop_item_lk">
+                                        <div class="lazyimg lazyimg_loaded otop_item_img">
+                                            <img src="img/grapefruit.jpg" class="lazyimg_img">
+                                        </div>
+                                        <div class="otop_item_rank otop_item_rank_3">
+                                            <span class="otop_item_rank_top">TOP</span>
+                                            <span class="otop_item_rank_num">03</span>
+                                            <svg>
+                                                <use xlink:href="#icon_square_yellow">
+                                                    <svg id="icon_square_yellow" viewBox="0 0 30 40">
+                                                        <polygon fill="#F3B639" points="0,40 30,40 30,0"></polygon>
+                                                        <polygon fill="#FAD17E" points="30,0 0,0 0,40"></polygon>
+                                                    </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <span class="otop_item_name">梅珍 福建蜜柚2个 白心柚子白肉蜜柚新鲜水果送礼佳品 </span>
+                                    </a>
+                                </div>
+                                <div class="otop_item otop_item_4">
+                                    <a href="#" class="otop_item_lk">
+                                        <div class="lazyimg lazyimg_loaded otop_item_img">
+                                            <img src="img/orange.jpg" class="lazyimg_img">
+                                        </div>
+                                        <div class="otop_item_rank otop_item_rank_4">
+                                            <span class="otop_item_rank_top">TOP</span>
+                                            <span class="otop_item_rank_num">04</span>
+                                            <svg>
+                                                <use xlink:href="#icon_square_gray">
+                                                    <svg id="icon_square_gray" viewBox="0 0 30 40">
+                                                        <polygon fill="#BFBAAF" points="0,40 30,40 30,0"></polygon>
+                                                        <polygon fill="#D6D2CA" points="30,0 0,0 0,40"></polygon>
+                                                    </svg>
+                                                    </use>
+                                                    </svg>
+                                                    </div>
+                                        <span class="otop_item_name">橙子 3斤装 果径60mm-70mm 冰糖橙 3斤装</span>
+                                    </a>
+                                </div>
+                                <div class="otop_list_boards">
+                                    <a href="#" class="otop_list_boards_lk">
+                                        <span>好物榜</span>
+                                        <span class="otop_list_boards_arrow">›</span>
+                                    </a>
+                                    <a href="#" class="otop_list_boards_lk">
+                                        <span>折扣榜</span>
+                                        <span class="otop_list_boards_arrow">›</span>
+                                    </a>
+                                    <a href="#" class="otop_list_boards_lk">
+                                        <span>店铺榜</span>
+                                        <span class="otop_list_boards_arrow">›</span>
+                                    </a>
+                                    <a href="#" class="otop_list_boards_lk">
+                                        <span>热搜榜</span>
+                                        <span class="otop_list_boards_arrow">›</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
